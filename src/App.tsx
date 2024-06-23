@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 import { prefixer } from "stylis";
@@ -11,14 +10,14 @@ import ArTranslation from "./translate/ArTranslation";
 import EnTranslation from "./translate/EnTranslation";
 import { useContext, useMemo } from "react";
 import { LangContext } from "./context/LangContext";
-import "./App.css";
-import { Button } from "@mui/material";
+import MainRouterProvider from "./routes";
 
 // TODO:: Create rtl cache
 const cacheRtl = createCache({
   key: "muirtl",
   stylisPlugins: [prefixer, rtlPlugin],
 });
+
 // TODO::define current language
 const currentLang = getLangCookie();
 axios.defaults.headers.common["from"] = "website";
@@ -40,21 +39,10 @@ function App() {
   const lang = langContext.lang();
   let { t } = useTranslation();
 
-  // TODO::APP Component
-  const AppComponent = () => (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>{t("welcome")}</p>
-        <Button
-          variant="contained"
-          onClick={() => langContext.changeLang(lang == "ar" ? "en" : "ar")}
-        >
-          Change Language to {lang == "ar" ? "EN" : "AR"}
-        </Button>
-      </header>
-    </div>
-  );
+  // TODO::APP Component - write your code here.
+  const AppComponent = () => {
+    return <MainRouterProvider />;
+  };
 
   const render = useMemo(() => {
     switch (lang) {
