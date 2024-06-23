@@ -11,6 +11,7 @@ import EnTranslation from "./translate/EnTranslation";
 import { useContext, useMemo } from "react";
 import { LangContext } from "./context/LangContext";
 import MainRouterProvider from "./routes";
+import MainNavbar from "./components/layout/navbar";
 
 // TODO:: Create rtl cache
 const cacheRtl = createCache({
@@ -41,7 +42,12 @@ function App() {
 
   // TODO::APP Component - write your code here.
   const AppComponent = () => {
-    return <MainRouterProvider />;
+    return (
+      <>
+        <MainNavbar />
+        <MainRouterProvider />
+      </>
+    );
   };
 
   const render = useMemo(() => {

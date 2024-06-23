@@ -1,22 +1,11 @@
-import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
-
-// * declare and define our routes..
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      <div>
-        <h1>Hello World</h1>
-        <Link to="about">About Us</Link>
-      </div>
-    ),
-  },
-  {
-    path: "about",
-    element: <div>About</div>,
-  },
-]);
+import { Routes, Route } from "react-router-dom";
 
 export default function MainRouterProvider() {
-  return <RouterProvider router={router} />;
+  // * declare and define our routes..
+  return (
+    <Routes>
+      <Route path="/" element={<h1>Home Page</h1>} />
+      <Route path="/about" element={<h1>About Page</h1>} />
+    </Routes>
+  );
 }
