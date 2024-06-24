@@ -1,10 +1,28 @@
 import { Button } from "@mui/material";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
-export default function NavbarLink() {
+export default function NavbarLink(props: PropsType) {
+  // TODO::declare and define component state and variables
+  const location = useLocation();
+  const isActive = location.pathname === props.href;
+
+  // return component ui
   return (
-    <Button component={NavLink} to="/about">
-      About
+    <Button
+      component={NavLink}
+      to={props.href}
+      sx={{
+        fontWeight: isActive ? 700 : 300,
+        color: "#fff",
+        textTransform: "none",
+      }}
+    >
+      {props.text}
     </Button>
   );
 }
+
+type PropsType = {
+  text: string;
+  href: string;
+};

@@ -14,11 +14,11 @@ export default function DesktopMenu() {
         },
       }}
     >
-      <NavbarLink />
-      <NavbarLink />
-      <NavbarLink />
-      <NavbarLink />
-      <NavbarLink />
+      <NavbarLink text="Home" href="/" />
+      <NavbarLink text="About us" href="/about" />
+      <NavbarLink text="Achievements" href="/achievements" />
+      <NavbarLink text="Services" href="/services" />
+      <NavbarLink text="Contact us" href="/contact" />
     </Stack>
   );
 }
