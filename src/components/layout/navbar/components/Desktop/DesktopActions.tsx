@@ -28,7 +28,7 @@ export default function NavbarDesktopActions() {
         variant="text"
         sx={{
           fontWeight: 300,
-          color: "#fff",
+          color: "inherit",
           textTransform: "none",
         }}
         onClick={() => langContext.changeLang(lang === "ar" ? "en" : "ar")}
