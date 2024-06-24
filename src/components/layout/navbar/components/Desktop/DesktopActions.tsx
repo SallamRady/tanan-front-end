@@ -1,11 +1,14 @@
 import { Button, Stack } from "@mui/material";
 import { useContext } from "react";
 import { LangContext } from "../../../../../context/LangContext";
+import MainButton from "../../../../MainButton";
+import { useTranslation } from "react-i18next";
 
 export default function NavbarDesktopActions() {
   // TODO::declare and define component state and variables
   const langContext = useContext(LangContext);
   const lang = langContext.lang();
+  let { t } = useTranslation();
 
   // TODO::declare and define helper methods
   // * return our component ui.
@@ -32,7 +35,10 @@ export default function NavbarDesktopActions() {
       >
         {lang === "ar" ? "En" : "Ar"}
       </Button>
-      <Button variant="contained">Free consultation</Button>
+      <MainButton
+        text={t("navbar.actions.FreeConsultation")}
+        handleClick={() => {}}
+      />
     </Stack>
   );
 }

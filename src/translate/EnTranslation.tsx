@@ -7,6 +7,9 @@ const EnTranslation = {
       services: "Services",
       achievements: "Achievements",
     },
+    actions: {
+      FreeConsultation: "Free consultation",
+    },
   },
   welcome: "Welcome to my multilingual website, this language is English.",
 };
