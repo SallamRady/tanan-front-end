@@ -39,40 +39,29 @@ export default function ServiceNumber1() {
             width={"90%"}
             height={"361.25px"}
           />
-          {/* next images show in mobile case */}
-          <ImageListItem
-            sx={{
-              display: {
-                xs: "block",
-                md: "none",
-              },
-            }}
-          >
-            <img
-              src={s1Img3}
-              alt="our services"
-              width={"90%"}
-              height={"361.25px"}
-            />
-          </ImageListItem>
-          <ImageListItem
-            sx={{
-              display: {
-                xs: "block",
-                md: "none",
-              },
-            }}
-          >
-            <img
-              src={s1Img4}
-              alt="our services"
-              width={"90%"}
-              height={"447.25px"}
-              style={{
-                borderRadius: "12px",
-              }}
-            />
-          </ImageListItem>
+        </Masonry>
+        <Masonry
+          columns={2}
+          spacing={2}
+          sx={{
+            display: {
+              xs: "block",
+              md: "none",
+            },
+          }}
+        >
+          <img
+            src={s1Img3}
+            alt="our services"
+            width={"90%"}
+            height={"361.25px"}
+          />
+          <img
+            src={s1Img4}
+            alt="our services"
+            width={"90%"}
+            height={"361.25px"}
+          />
         </Masonry>
       </Grid>
     </>
