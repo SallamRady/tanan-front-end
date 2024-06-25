@@ -15,7 +15,7 @@ export default function DesktopMenu() {
       sx={{
         display: {
           xs: "none",
-          sm: "flex",
+          md: "flex",
         },
       }}
     >

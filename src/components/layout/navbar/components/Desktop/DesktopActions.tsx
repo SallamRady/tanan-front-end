@@ -20,7 +20,7 @@ export default function NavbarDesktopActions() {
       sx={{
         display: {
           xs: "none",
-          sm: "flex",
+          md: "flex",
         },
       }}
     >

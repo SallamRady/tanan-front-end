@@ -5,6 +5,7 @@ import NavbarDesktopView from "./components/Desktop";
 import HomeVideoBG from "../../../pages/Home/components/VideoBG";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import MobileNavbarView from "./components/mobile";
 
 export default function MainNavbar() {
   // todo::declare and define component state and variables
@@ -34,13 +35,13 @@ export default function MainNavbar() {
           left: 0,
           zIndex: 1,
           width: "100%",
-          marginTop: "8px",
+          marginTop: "10px",
           transition:
             "transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),color 0.2s ease-in-out,background-color 0.5s ease-in-out",
           color: "#fff",
           ":hover": {
             backgroundColor: "#fff",
-            transform: "translateY(-8px)",
+            transform: "translateY(-10px)",
             color: "#000",
           },
         }}
@@ -60,6 +61,8 @@ export default function MainNavbar() {
         />
         {/* Desktop Navbar */}
         <NavbarDesktopView />
+        {/* Mobile Navbar */}
+        <MobileNavbarView setIsHovered={setIsHovered} />
       </Stack>
 
       {/* Hero Section */}
