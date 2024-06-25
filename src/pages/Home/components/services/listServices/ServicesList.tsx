@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { SetStateAction } from "react";
-import ServicesDataList from "../../../../Constants/Services";
-import MainButton from "../../../../components/MainButton";
+import ServicesDataList from "../../../../../Constants/Services";
+import MainButton from "../../../../../components/MainButton";
 import SingleServiceItem from "./SingleServiceItem";
 
 export default function ServicesListIndex(props: PropsType) {

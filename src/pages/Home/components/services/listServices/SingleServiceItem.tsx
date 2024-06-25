@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import { SetStateAction } from "react";
-import { ServiceType } from "../../../../types/Services";
+import { ServiceType } from "../../../../../types/Services";
 
 export default function SingleServiceItem(props: PropsType) {
   // TODO::declare and define component state and variables
