@@ -16,6 +16,7 @@ export default function ClientsSection() {
         bgcolor: "#8F65EB",
         width: "100%",
         color: "#fff",
+        marginY:0,
       }}
     >
       <Typography variant="h4" fontSize={"3rem"} fontWeight={800}>
