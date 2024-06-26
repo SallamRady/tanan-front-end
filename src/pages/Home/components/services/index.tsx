@@ -1,10 +1,11 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, Skeleton } from "@mui/material";
 import { useState } from "react";
 import ServicesListIndex from "./listServices/ServicesList";
 import ServiceNumber1 from "./service-1";
 import { Masonry } from "@mui/lab";
 import s1Img3 from "../../../../assets/images/services/s1/s1-i3.png";
 import s1Img4 from "../../../../assets/images/services/s1/s1-i4.png";
+import s2Img5 from "../../../../assets/images/services/s2/s2-i5.png";
 import ServiceNumber2 from "./service-2";
 
 export default function HomeServices() {
@@ -62,6 +63,39 @@ export default function HomeServices() {
               />
             </Masonry>
           </Box>
+        )}
+        {activeServiceId === "service-2" && (
+          <>
+            <Box
+              width={"100%"}
+              mt={10}
+              sx={{
+                display: {
+                  xs: "none",
+                  md: "block",
+                },
+              }}
+            >
+              <Masonry columns={2} spacing={2}>
+                <Skeleton
+                  variant="rectangular"
+                  height={200}
+                  sx={{
+                    bgcolor: "#fff",
+                  }}
+                />
+                <img
+                  src={s2Img5}
+                  alt="our services"
+                  width={"90%"}
+                  height={"361.25px"}
+                  style={{
+                    float: "right",
+                  }}
+                />
+              </Masonry>
+            </Box>
+          </>
         )}
       </Grid>
       {/* show service view */}
