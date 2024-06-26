@@ -11,12 +11,14 @@ export default function ServiceNumber3() {
     <Grid item xs={12} md={6}>
       <Masonry columns={2} spacing={2}>
         <img
+          className="image-fade-in"
           src={s3Img1}
           alt="our services"
           width={"95%"}
           height={"371.25px"}
         />
         <img
+          className="image-fade-in"
           src={s3Img2}
           alt="our services"
           width={"90%"}
@@ -26,12 +28,14 @@ export default function ServiceNumber3() {
           }}
         />
         <img
+          className="image-fade-in"
           src={s3Img3}
           alt="our services"
           width={"90%"}
           height={"371.25px"}
         />
         <img
+          className="image-fade-in"
           src={s3Img4}
           alt="our services"
           width={"90%"}
@@ -49,6 +53,7 @@ export default function ServiceNumber3() {
         }}
       >
         <img
+          className="image-fade-in"
           src={s3Img5}
           alt="our services"
           width={"90%"}

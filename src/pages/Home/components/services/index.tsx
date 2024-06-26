@@ -49,12 +49,14 @@ export default function HomeServices() {
           >
             <Masonry columns={2} spacing={2}>
               <img
+                className="image-fade-in"
                 src={s1Img3}
                 alt="our services"
                 width={"90%"}
                 height={"361.25px"}
               />
               <img
+                className="image-fade-in"
                 src={s1Img4}
                 alt="our services"
                 width={"90%"}
@@ -87,6 +89,7 @@ export default function HomeServices() {
                   }}
                 />
                 <img
+                  className="image-fade-in"
                   src={s2Img5}
                   alt="our services"
                   width={"90%"}
@@ -120,11 +123,11 @@ export default function HomeServices() {
                   }}
                 />
                 <img
+                  className="image-fade-in"
                   src={s3Img5}
                   alt="our services"
                   width={"90%"}
                   height={"371.25px"}
-                  className="image-fade-in"
                   style={{
                     float: "right",
                   }}
