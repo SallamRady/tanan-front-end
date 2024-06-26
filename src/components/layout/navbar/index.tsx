@@ -35,13 +35,13 @@ export default function MainNavbar() {
           left: 0,
           zIndex: 1,
           width: "100%",
-          marginTop: "10px",
+          marginTop: "50px",
           transition:
             "transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),color 0.2s ease-in-out,background-color 0.5s ease-in-out",
           color: "#fff",
           ":hover": {
             backgroundColor: "#fff",
-            transform: "translateY(-10px)",
+            transform: "translateY(-50px)",
             color: "#000",
           },
         }}

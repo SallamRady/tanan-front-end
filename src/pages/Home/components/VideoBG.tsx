@@ -3,7 +3,7 @@ import homeBgVideo from "../../../assets/videos/BgVideo.mp4";
 
 export default function HomeVideoBG() {
   return (
-    <Box width={"100%"} height={"95vh"} position={"relative"}>
+    <Box width={"100%"} height={"100vh"} position={"relative"}>
       {/* video */}
       <video
         src={homeBgVideo}
