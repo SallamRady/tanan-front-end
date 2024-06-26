@@ -12,6 +12,7 @@ import { useContext, useMemo } from "react";
 import { LangContext } from "./context/LangContext";
 import MainRouterProvider from "./routes";
 import MainNavbar from "./components/layout/navbar";
+import "./index.css";
 
 // TODO:: Create rtl cache
 const cacheRtl = createCache({

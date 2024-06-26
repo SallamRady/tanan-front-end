@@ -6,7 +6,9 @@ import { Masonry } from "@mui/lab";
 import s1Img3 from "../../../../assets/images/services/s1/s1-i3.png";
 import s1Img4 from "../../../../assets/images/services/s1/s1-i4.png";
 import s2Img5 from "../../../../assets/images/services/s2/s2-i5.png";
+import s3Img5 from "../../../../assets/images/services/s3/s3-i5.png";
 import ServiceNumber2 from "./service-2";
+import ServiceNumber3 from "./service-3";
 
 export default function HomeServices() {
   // TODO::declare and define component state and variables
@@ -20,7 +22,7 @@ export default function HomeServices() {
       case "service-2":
         return <ServiceNumber2 />;
       case "service-3":
-        return <h6>Service 3</h6>;
+        return <ServiceNumber3 />;
     }
   };
 
@@ -89,6 +91,40 @@ export default function HomeServices() {
                   alt="our services"
                   width={"90%"}
                   height={"361.25px"}
+                  style={{
+                    float: "right",
+                  }}
+                />
+              </Masonry>
+            </Box>
+          </>
+        )}
+        {activeServiceId === "service-3" && (
+          <>
+            <Box
+              width={"100%"}
+              mt={18}
+              sx={{
+                display: {
+                  xs: "none",
+                  md: "block",
+                },
+              }}
+            >
+              <Masonry columns={2} spacing={2}>
+                <Skeleton
+                  variant="rectangular"
+                  height={200}
+                  sx={{
+                    bgcolor: "#fff",
+                  }}
+                />
+                <img
+                  src={s3Img5}
+                  alt="our services"
+                  width={"90%"}
+                  height={"371.25px"}
+                  className="image-fade-in"
                   style={{
                     float: "right",
                   }}
