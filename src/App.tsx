@@ -13,6 +13,7 @@ import { LangContext } from "./context/LangContext";
 import MainRouterProvider from "./routes";
 import MainNavbar from "./components/layout/navbar";
 import "./index.css";
+import MainFooter from "./components/layout/footer/MainFooter";
 
 // TODO:: Create rtl cache
 const cacheRtl = createCache({
@@ -47,6 +48,7 @@ function App() {
       <>
         <MainNavbar />
         <MainRouterProvider />
+        <MainFooter />
       </>
     );
   };

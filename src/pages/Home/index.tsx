@@ -3,6 +3,7 @@ import HomeServices from "./components/services";
 import HomeBridge from "./components/bridge";
 import ClientsSection from "./components/clients";
 import AchievmentSection from "./components/achievment";
+import ContactUsSection from "./components/ContactUs";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       <HomeBridge />
       <ClientsSection />
       <AchievmentSection />
+      <ContactUsSection />
     </Stack>
   );
 }
