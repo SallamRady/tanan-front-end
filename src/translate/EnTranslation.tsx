@@ -35,6 +35,10 @@ const EnTranslation = {
       reviews: "Positive reviews",
       appreciation: "Customers appreciation",
     },
+    contact: {
+      question: "Ready to launch your next project?",
+      contact: "Contact Us",
+    },
   },
   buttons: {
     viewMore: "View More",

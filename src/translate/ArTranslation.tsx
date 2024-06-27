@@ -35,6 +35,10 @@ const ArTranslation = {
       reviews: "تقييمات إيجابية",
       appreciation: "تقدير من العملاء",
     },
+    contact: {
+      question: "مستعد لإطلاق مشروعك القادم؟",
+      contact: "تواصل معنا",
+    },
   },
   buttons: {
     viewMore: "عرض المزيد",
