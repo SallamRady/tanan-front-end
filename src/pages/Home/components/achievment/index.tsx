@@ -1,8 +1,13 @@
 import { Box, Stack } from "@mui/material";
 import homeBgVideo from "../../../../assets/videos/BgVideo.mp4";
 import AchievmentItem from "./AchievmentItem";
+import { useTranslation } from "react-i18next";
 
 export default function AchievmentSection() {
+  // TODO::declare and define our state and variables
+  let { t } = useTranslation();
+
+  // return component ui.
   return (
     <div
       style={{
@@ -49,10 +54,13 @@ export default function AchievmentSection() {
             },
           }}
         >
-          <AchievmentItem value={15} text="Years of experience" />
-          <AchievmentItem value={420} text="Happy customers" />
-          <AchievmentItem value={200} text="Positive reviews" />
-          <AchievmentItem value={310} text="Customers appreciation" />
+          <AchievmentItem value={15} text={t("home.achievements.experience")} />
+          <AchievmentItem value={420} text={t("home.achievements.customers")} />
+          <AchievmentItem value={200} text={t("home.achievements.reviews")} />
+          <AchievmentItem
+            value={310}
+            text={t("home.achievements.appreciation")}
+          />
         </Stack>
       </Box>
     </div>

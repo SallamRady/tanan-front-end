@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import LangContextProvider from "./context/LangContext";
 import { BrowserRouter } from "react-router-dom";
+import { ConstantsContextProvider } from "./context/ConstantsContext";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -12,9 +13,11 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <LangContextProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <ConstantsContextProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </ConstantsContextProvider>
     </LangContextProvider>
   </React.StrictMode>
 );

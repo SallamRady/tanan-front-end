@@ -4,8 +4,13 @@ import cImg2 from "../../../../assets/images/clients/c2.png";
 import cImg3 from "../../../../assets/images/clients/c3.png";
 import cImg4 from "../../../../assets/images/clients/c4.png";
 import cImg5 from "../../../../assets/images/clients/c5.png";
+import { useTranslation } from "react-i18next";
 
 export default function ClientsSection() {
+  // TODO::declare and define our state and variables
+  let { t } = useTranslation();
+
+  // return component ui.
   return (
     <Stack
       spacing={3}
@@ -16,15 +21,14 @@ export default function ClientsSection() {
         bgcolor: "#8F65EB",
         width: "100%",
         color: "#fff",
-        marginY:0,
+        marginY: 0,
       }}
     >
       <Typography variant="h4" fontSize={"3rem"} fontWeight={800}>
-        Clients
+        {t("home.clients.title")}
       </Typography>
       <Typography variant="body1" fontSize={18} textAlign={"center"}>
-        Our journey is driven by strong partnerships and trusted clients who
-        have shared their creative visions with us.
+        {t("home.clients.statement")}
       </Typography>
       <Stack
         width={"80%"}

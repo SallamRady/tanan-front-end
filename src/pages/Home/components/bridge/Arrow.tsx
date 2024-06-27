@@ -1,12 +1,14 @@
 import { Stack, Typography } from "@mui/material";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function ArrowDown(props: PropsType) {
   // TODO::declare and define component state and variables
   const [hovered, setHovered] = useState(false);
   const [hide, setHide] = useState(true);
   const elementRef = useRef<HTMLDivElement | null>(null);
+  let { t } = useTranslation();
 
   useEffect(() => {
     const getYCoordinate = () => {
@@ -74,7 +76,7 @@ export default function ArrowDown(props: PropsType) {
         {props.text}
       </Typography>
 
-      {props.text === "Sell" && (
+      {props.text === t("home.bridge.sell") && (
         <KeyboardDoubleArrowDownIcon
           sx={{
             transition: "all 0.3s ease-in-out",
