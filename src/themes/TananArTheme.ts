@@ -12,6 +12,9 @@ const TananEnTheme = createTheme({
   },
   typography: {
     fontFamily: [
+      "ZanjabeelBold",
+      "ZanjabeelMedium",
+      "ZanjabeelRegular",
       "CairoRegular",
       "-apple-system",
       "BlinkMacSystemFont",

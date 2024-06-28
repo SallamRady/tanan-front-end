@@ -1,5 +1,4 @@
 import { Stack } from "@mui/material";
-import ListOfFooterLinksData from "../../../Constants/FooterLinksData";
 import FooterList from "./FooterList";
 import { useTranslation } from "react-i18next";
 

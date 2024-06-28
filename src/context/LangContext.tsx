@@ -23,11 +23,12 @@ function LangContextProvider({ children }: PropsType) {
   useEffect(() => {
     if (language === "ar") {
       document.documentElement.setAttribute("dir", "rtl");
-      document.documentElement.style.fontFamily = "'CairoRegular', sans-serif";
+      document.documentElement.style.fontFamily =
+        "ZanjabeelBold,ZanjabeelMedium,ZanjabeelRegular, sans-serif";
     } else {
       document.documentElement.setAttribute("dir", "ltr");
       document.documentElement.style.fontFamily =
-        "'GeistBoldRegular', sans-serif";
+        "GeistBold,GeistMedium,GeistThin, sans-serif";
     }
 
     document.documentElement.setAttribute("lang", language);

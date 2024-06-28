@@ -1,13 +1,43 @@
+/* English fonts */
 @font-face {
-  font-family: 'GeistBoldRegular';
-  src: url('./fonts/Geist-Regular.otf') format('opentype');
+  font-family: 'GeistBold';
+  src: url('./fonts/En/Geist-Bold.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'CairoRegular';
-  src: url('./fonts/Cairo-Regular.ttf') format('opentype');
+  font-family: 'GeistMedium';
+  src: url('./fonts/En/Geist-Medium.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeistThin';
+  src: url('./fonts/En/Geist-Thin.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Arabic fonts */
+@font-face {
+  font-family: 'ZanjabeelBold';
+  src: url('./fonts/Ar/Zanjabeel-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ZanjabeelMedium';
+  src: url('./fonts/Ar/Zanjabeel-Medium.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ZanjabeelRegular';
+  src: url('./fonts/Ar/Zanjabeel-Regular.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
@@ -24,7 +54,7 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.image-fade-in:hover{
+.image-fade-in:hover {
   transform: scale(1.0661);
 }
 

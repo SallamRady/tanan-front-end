@@ -12,7 +12,9 @@ const TananEnTheme = createTheme({
   },
   typography: {
     fontFamily: [
-      "GeistBoldRegular",
+      "GeistBold",
+      "GeistMedium",
+      "GeistThin",
       "-apple-system",
       "BlinkMacSystemFont",
       '"Segoe UI"',
