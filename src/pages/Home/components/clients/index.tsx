@@ -24,7 +24,14 @@ export default function ClientsSection() {
         marginY: 0,
       }}
     >
-      <Typography variant="h4" fontSize={"3rem"} fontWeight={800}>
+      <Typography
+        variant="h4"
+        fontSize={"3rem"}
+        fontWeight={900}
+        sx={{
+          textShadow: "1px 1px",
+        }}
+      >
         {t("home.clients.title")}
       </Typography>
       <Typography variant="body1" fontSize={18} textAlign={"center"}>

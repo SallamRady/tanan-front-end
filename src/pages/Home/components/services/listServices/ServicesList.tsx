@@ -15,7 +15,15 @@ export default function ServicesListIndex(props: PropsType) {
   return (
     <>
       {/* title */}
-      <Typography variant="h2" fontSize={"4rem"} fontWeight={700} mt={5}>
+      <Typography
+        variant="h2"
+        fontSize={"4rem"}
+        fontWeight={700}
+        mt={5}
+        sx={{
+          textShadow: "1px 1px",
+        }}
+      >
         {t("home.services.services")}
       </Typography>
       {/* service list */}

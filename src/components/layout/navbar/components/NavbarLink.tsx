@@ -12,7 +12,9 @@ export default function NavbarLink(props: PropsType) {
       component={NavLink}
       to={props.href}
       sx={{
-        fontWeight: isActive ? 700 : 300,
+        fontWeight: isActive ? 900 : 300,
+        fontSize: isActive ? "16px" : "14px",
+        textShadow: isActive ? "1px 1px" : "",
         color: "inherit",
         textTransform: "none",
       }}

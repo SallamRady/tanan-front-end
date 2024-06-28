@@ -21,8 +21,12 @@
 /* Apply the animation to the image */
 .image-fade-in {
   animation: ImageFadeIn 1s ease-in-out forwards;
+  transition: transform 0.3s ease-in-out;
 }
 
+.image-fade-in:hover{
+  transform: scale(1.0661);
+}
 
 
 /* Define the keyframes for the fade-in animation */
