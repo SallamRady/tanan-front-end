@@ -14,6 +14,9 @@ import MainRouterProvider from "./routes";
 import MainNavbar from "./components/layout/navbar";
 import "./index.css";
 import MainFooter from "./components/layout/footer/MainFooter";
+import { ThemeProvider } from "@mui/material";
+import ArTheme from "./themes/TananArTheme";
+import EnTheme from "./themes/TananEnTheme";
 
 // TODO:: Create rtl cache
 const cacheRtl = createCache({
@@ -46,9 +49,11 @@ function App() {
   const AppComponent = () => {
     return (
       <>
-        <MainNavbar />
-        <MainRouterProvider />
-        <MainFooter />
+        <ThemeProvider theme={lang === "ar" ? ArTheme : EnTheme}>
+          <MainNavbar />
+          <MainRouterProvider />
+          <MainFooter />
+        </ThemeProvider>
       </>
     );
   };
