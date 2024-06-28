@@ -1,8 +1,13 @@
 import { Stack } from "@mui/material";
 import ListOfFooterLinksData from "../../../Constants/FooterLinksData";
 import FooterList from "./FooterList";
+import { useTranslation } from "react-i18next";
 
 export default function FooterLinks() {
+  // declare and define state and variables
+  let { t } = useTranslation();
+
+  // return component ui
   return (
     <Stack
       justifyContent={"start"}
@@ -19,9 +24,7 @@ export default function FooterLinks() {
       }}
     >
       {/* lists */}
-      {ListOfFooterLinksData.map((list) => (
-        <FooterList key={list.title} list={list} />
-      ))}
+      <FooterList />
     </Stack>
   );
 }

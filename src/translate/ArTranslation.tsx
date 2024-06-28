@@ -15,8 +15,8 @@ const ArTranslation = {
     services: {
       services: "خدماتنا",
       service1: "نبنى استراتيجية و هوية العلامة التجارية",
-      service2: "Digital Marketing Campaigns",
-      service3: "Content Creation",
+      service2: "نصنع الحملات التسويقية المتكاملة",
+      service3: "الكتابة الإبداعية",
     },
     bridge: {
       react: "يصل",
@@ -39,6 +39,37 @@ const ArTranslation = {
       question: "مستعد لإطلاق مشروعك القادم؟",
       contact: "تواصل معنا",
     },
+  },
+  footer: {
+    links: [
+      {
+        title: "المؤسسة",
+        links: [
+          { path: "/", text: "الرئيسية" },
+          { path: "/about", text: "من نحن" },
+          { path: "/services", text: "خدماتنا" },
+          { path: "/contact", text: "تواصل معنا" },
+        ],
+      },
+      {
+        title: "Services",
+        links: [
+          {
+            path: "/services",
+            text: "نبنى استراتيجية و هوية العلامة التجارية",
+          },
+          { path: "/services", text: "نصنع الحملات التسويقية المتكاملة" },
+          { path: "/services", text: "الكتابة الإبداعية" },
+        ],
+      },
+      {
+        title: "Legal",
+        links: [
+          { path: "/", text: "سياسة الخصوصية" },
+          { path: "/", text: "شروط الاستخدام" },
+        ],
+      },
+    ],
   },
   buttons: {
     viewMore: "عرض المزيد",

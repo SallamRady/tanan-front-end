@@ -40,6 +40,34 @@ const EnTranslation = {
       contact: "Contact Us",
     },
   },
+  footer: {
+    links: [
+      {
+        title: "company",
+        links: [
+          { path: "/", text: "Home" },
+          { path: "/about", text: "About Us" },
+          { path: "/services", text: "Services" },
+          { path: "/contact", text: "Contact Us" },
+        ],
+      },
+      {
+        title: "Services",
+        links: [
+          { path: "/services", text: "Brand Strategy and Identity" },
+          { path: "/services", text: "Digital Marketing Campaigns" },
+          { path: "/services", text: "Content Creation" },
+        ],
+      },
+      {
+        title: "Legal",
+        links: [
+          { path: "/", text: "Privacy Policy" },
+          { path: "/", text: "Terms & Conditions" },
+        ],
+      },
+    ],
+  },
   buttons: {
     viewMore: "View More",
   },
