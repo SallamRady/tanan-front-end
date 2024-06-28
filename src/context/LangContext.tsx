@@ -21,8 +21,14 @@ function LangContextProvider({ children }: PropsType) {
 
   // * handle direction of page according current language
   useEffect(() => {
-    if (language === "ar") document.documentElement.setAttribute("dir", "rtl");
-    else document.documentElement.setAttribute("dir", "ltr");
+    if (language === "ar") {
+      document.documentElement.setAttribute("dir", "rtl");
+      document.documentElement.style.fontFamily = "'CairoRegular', sans-serif";
+    } else {
+      document.documentElement.setAttribute("dir", "ltr");
+      document.documentElement.style.fontFamily =
+        "'GeistBoldRegular', sans-serif";
+    }
 
     document.documentElement.setAttribute("lang", language);
   }, [language]);

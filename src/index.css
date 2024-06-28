@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'GeistBoldRegular';
+  src: url('./fonts/Geist-Regular.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CairoRegular';
+  src: url('./fonts/Cairo-Regular.ttf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -52,4 +66,3 @@
     transform: translateY(0);
   }
 }
-
