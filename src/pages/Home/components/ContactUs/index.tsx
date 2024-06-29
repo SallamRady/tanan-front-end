@@ -33,7 +33,19 @@ export default function ContactUsSection() {
         color: "#fff",
       }}
     >
-      <Stack spacing={2} ml={18} width={"55%"}>
+      <Stack
+        spacing={2}
+        sx={{
+          width: {
+            xs: "100%",
+            md: "55%",
+          },
+          ml: {
+            xs: 3,
+            md: 18,
+          },
+        }}
+      >
         <Typography
           variant="body1"
           fontSize={"2.7rem"}
