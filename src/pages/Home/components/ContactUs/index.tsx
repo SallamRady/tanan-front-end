@@ -11,10 +11,13 @@ import BgImg from "../../../../assets/images/contactSectionBG.jpeg";
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import DraftsOutlinedIcon from "@mui/icons-material/DraftsOutlined";
 import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import { ConstantsContext } from "../../../../context/ConstantsContext";
 
 export default function ContactUsSection() {
   // TODO::declare and define our state and variables
   let { t } = useTranslation();
+  const constContext = useContext(ConstantsContext);
 
   // return component ui.
   return (
@@ -31,9 +34,19 @@ export default function ContactUsSection() {
       }}
     >
       <Stack spacing={2} ml={18} width={"55%"}>
-        <Typography variant="body1" fontSize={"3rem"} fontWeight={700}>
+        <Typography
+          variant="body1"
+          fontSize={"2.7rem"}
+          fontWeight={700}
+          fontFamily={constContext.boldFont}
+        >
           {t("home.contact.question")}{" "}
-          <span style={{ fontWeight: "lighter" }}>
+          <span
+            style={{
+              fontWeight: "lighter",
+              fontFamily: constContext.fontRegular,
+            }}
+          >
             {t("home.contact.contact")}
           </span>
         </Typography>
@@ -42,14 +55,24 @@ export default function ContactUsSection() {
             <ListItemIcon>
               <AddIcCallIcon sx={{ color: "#fff" }} />
             </ListItemIcon>
-            <ListItemText primary="+966 50 588 2911" />
+            <ListItemText
+              primary="+966 50 588 2911"
+              primaryTypographyProps={{
+                fontFamily: constContext.mediumFont,
+              }}
+            />
           </ListItem>
 
           <ListItem>
             <ListItemIcon>
               <DraftsOutlinedIcon sx={{ color: "#fff" }} />
             </ListItemIcon>
-            <ListItemText primary="yahala@tannan.com" />
+            <ListItemText
+              primary="yahala@tannan.com"
+              primaryTypographyProps={{
+                fontFamily: constContext.mediumFont,
+              }}
+            />
           </ListItem>
         </List>
       </Stack>

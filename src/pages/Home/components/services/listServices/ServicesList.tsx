@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 export default function ServicesListIndex(props: PropsType) {
   // TODO::declare and define component state and variables
   const { ServicesDataList } = useContext(ConstantsContext);
+  const constContext = useContext(ConstantsContext);
   let { t } = useTranslation();
 
   // TODO::declare and define component helper methods
@@ -21,7 +22,7 @@ export default function ServicesListIndex(props: PropsType) {
         fontWeight={700}
         mt={5}
         sx={{
-          textShadow: "1px 1px",
+          fontFamily: constContext.boldFont,
         }}
       >
         {t("home.services.services")}

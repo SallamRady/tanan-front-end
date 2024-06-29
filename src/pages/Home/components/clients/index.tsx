@@ -5,10 +5,13 @@ import cImg3 from "../../../../assets/images/clients/c3.png";
 import cImg4 from "../../../../assets/images/clients/c4.png";
 import cImg5 from "../../../../assets/images/clients/c5.png";
 import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import { ConstantsContext } from "../../../../context/ConstantsContext";
 
 export default function ClientsSection() {
   // TODO::declare and define our state and variables
   let { t } = useTranslation();
+  const constContext = useContext(ConstantsContext);
 
   // return component ui.
   return (
@@ -29,12 +32,17 @@ export default function ClientsSection() {
         fontSize={"3rem"}
         fontWeight={900}
         sx={{
-          textShadow: "1px 1px",
+          fontFamily: constContext.boldFont,
         }}
       >
         {t("home.clients.title")}
       </Typography>
-      <Typography variant="body1" fontSize={18} textAlign={"center"}>
+      <Typography
+        variant="body1"
+        fontSize={18}
+        textAlign={"center"}
+        fontFamily={constContext.mediumFont}
+      >
         {t("home.clients.statement")}
       </Typography>
       <Stack

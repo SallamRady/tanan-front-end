@@ -1,10 +1,12 @@
 import { Stack, Typography } from "@mui/material";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { ConstantsContext } from "../../../../context/ConstantsContext";
 
 export default function ArrowDown(props: PropsType) {
   // TODO::declare and define component state and variables
+  const constContext = useContext(ConstantsContext);
   const [hovered, setHovered] = useState(false);
   const [hide, setHide] = useState(true);
   const elementRef = useRef<HTMLDivElement | null>(null);
@@ -47,7 +49,6 @@ export default function ArrowDown(props: PropsType) {
       }}
       onMouseEnter={() => {
         setHovered(true);
-        console.log("scrollTop", elementRef.current?.offsetHeight);
       }}
       onMouseLeave={() => {
         setHovered(false);
@@ -66,6 +67,7 @@ export default function ArrowDown(props: PropsType) {
         fontWeight={hovered ? 600 : 300}
         fontSize={hovered ? "2.3rem" : "1.4rem"}
         sx={{
+          fontFamily: hovered ? constContext.boldFont : constContext.mediumFont,
           transition: "all 0.3s ease-in-out",
           color: "#8f65eb",
           ":hover": {

@@ -3,10 +3,12 @@ import { useContext } from "react";
 import { LangContext } from "../../../../../context/LangContext";
 import MainButton from "../../../../MainButton";
 import { useTranslation } from "react-i18next";
+import { ConstantsContext } from "../../../../../context/ConstantsContext";
 
 export default function NavbarDesktopActions() {
   // TODO::declare and define component state and variables
   const langContext = useContext(LangContext);
+  const constContext = useContext(ConstantsContext);
   const lang = langContext.lang();
   let { t } = useTranslation();
 
@@ -27,6 +29,7 @@ export default function NavbarDesktopActions() {
       <Button
         variant="text"
         sx={{
+          fontFamily: constContext.mediumFont,
           fontWeight: 300,
           color: "inherit",
           textTransform: "none",

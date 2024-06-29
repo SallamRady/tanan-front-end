@@ -10,10 +10,12 @@ import SingleMenuItem from "./SingleItem";
 import { useContext } from "react";
 import { LangContext } from "../../../../../context/LangContext";
 import { useNavigate } from "react-router-dom";
+import { ConstantsContext } from "../../../../../context/ConstantsContext";
 
 export default function MobileMenu(props: PropsType) {
   // todo::declare and define component state and variables
   const langContext = useContext(LangContext);
+  const constContext = useContext(ConstantsContext);
   const lang = langContext.lang();
   const navigator = useNavigate();
   let { t } = useTranslation();
@@ -67,6 +69,8 @@ export default function MobileMenu(props: PropsType) {
           variant="contained"
           color="primary"
           sx={{
+            fontFamily: constContext.mediumFont,
+            fontSize: "1rem",
             borderRadius: "0",
             padding: "0.6rem 1.8rem",
             textTransform: "none",

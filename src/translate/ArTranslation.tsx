@@ -52,7 +52,7 @@ const ArTranslation = {
         ],
       },
       {
-        title: "Services",
+        title: "خدماتنا",
         links: [
           {
             path: "/services",
@@ -63,10 +63,10 @@ const ArTranslation = {
         ],
       },
       {
-        title: "Legal",
+        title: "قانوني",
         links: [
-          { path: "/", text: "سياسة الخصوصية" },
-          { path: "/", text: "شروط الاستخدام" },
+          { path: "/Legal", text: "سياسة الخصوصية" },
+          { path: "/Legal", text: "شروط الاستخدام" },
         ],
       },
     ],

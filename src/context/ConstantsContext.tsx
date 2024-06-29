@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { LangContext } from "./LangContext";
 
@@ -7,7 +7,7 @@ export const ConstantsContext = createContext<ConstantsContextType>({
   ServicesDataList: [],
   boldFont: "GeistBold",
   mediumFont: "GeistMedium",
-  mediumRegular: "GeistThin",
+  fontRegular: "GeistThin",
 });
 
 export function ConstantsContextProvider({ children }: PropsType) {
@@ -18,7 +18,7 @@ export function ConstantsContextProvider({ children }: PropsType) {
 
   let boldFont = lang === "ar" ? "ZanjabeelBold" : "GeistBold";
   let mediumFont = lang === "ar" ? "ZanjabeelMedium" : "GeistMedium";
-  let mediumRegular = lang === "ar" ? "ZanjabeelRegular" : "GeistThin";
+  let fontRegular = lang === "ar" ? "ZanjabeelRegular" : "GeistThin";
 
   const ServicesDataList = [
     { id: "service-1", text: t("home.services.service1") },
@@ -30,7 +30,7 @@ export function ConstantsContextProvider({ children }: PropsType) {
 
   return (
     <ConstantsContext.Provider
-      value={{ ServicesDataList, boldFont, mediumFont, mediumRegular }}
+      value={{ ServicesDataList, boldFont, mediumFont, fontRegular }}
     >
       {children}
     </ConstantsContext.Provider>
@@ -49,5 +49,5 @@ type ConstantsContextType = {
   }[];
   boldFont: string;
   mediumFont: string;
-  mediumRegular: string;
+  fontRegular: string;
 };

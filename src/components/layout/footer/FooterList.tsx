@@ -5,12 +5,16 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import { ConstantsContext } from "../../../context/ConstantsContext";
 
 export default function FooterList() {
   // declare and define state and variables
   let { t } = useTranslation();
+  const location = useLocation();
+  const constContext = useContext(ConstantsContext);
 
   // return component ui
   return (
@@ -19,6 +23,7 @@ export default function FooterList() {
         <Typography
           variant="body1"
           color={"#6F6F6F"}
+          fontFamily={constContext.fontRegular}
           fontSize={"1rem"}
           fontWeight={300}
         >
@@ -32,7 +37,15 @@ export default function FooterList() {
           >
             <ListItemText
               primary={t("footer.links.0.links.0.text")}
-              sx={{ fontWeight: 300, fontSize: "1rem" }}
+              primaryTypographyProps={{
+                color:
+                  t("footer.links.0.links.0.path") === location.pathname
+                    ? "#fff"
+                    : "#6F6F6F",
+                fontWeight: 300,
+                fontSize: "1rem",
+                fontFamily: constContext.fontRegular,
+              }}
             />
           </ListItemButton>
           <ListItemButton
@@ -42,7 +55,15 @@ export default function FooterList() {
           >
             <ListItemText
               primary={t("footer.links.0.links.1.text")}
-              sx={{ fontWeight: 300, fontSize: "1rem" }}
+              primaryTypographyProps={{
+                color:
+                  t("footer.links.0.links.1.path") === location.pathname
+                    ? "#fff"
+                    : "#6F6F6F",
+                fontWeight: 300,
+                fontSize: "1rem",
+                fontFamily: constContext.fontRegular,
+              }}
             />
           </ListItemButton>
           <ListItemButton
@@ -52,7 +73,15 @@ export default function FooterList() {
           >
             <ListItemText
               primary={t("footer.links.0.links.2.text")}
-              sx={{ fontWeight: 300, fontSize: "1rem" }}
+              primaryTypographyProps={{
+                color:
+                  t("footer.links.0.links.2.path") === location.pathname
+                    ? "#fff"
+                    : "#6F6F6F",
+                fontWeight: 300,
+                fontSize: "1rem",
+                fontFamily: constContext.fontRegular,
+              }}
             />
           </ListItemButton>
           <ListItemButton
@@ -62,7 +91,15 @@ export default function FooterList() {
           >
             <ListItemText
               primary={t("footer.links.0.links.3.text")}
-              sx={{ fontWeight: 300, fontSize: "1rem" }}
+              primaryTypographyProps={{
+                color:
+                  t("footer.links.0.links.3.path") === location.pathname
+                    ? "#fff"
+                    : "#6F6F6F",
+                fontWeight: 300,
+                fontSize: "1rem",
+                fontFamily: constContext.fontRegular,
+              }}
             />
           </ListItemButton>
         </List>
@@ -72,6 +109,7 @@ export default function FooterList() {
         <Typography
           variant="body1"
           color={"#6F6F6F"}
+          fontFamily={constContext.fontRegular}
           fontSize={"1rem"}
           fontWeight={300}
         >
@@ -85,7 +123,15 @@ export default function FooterList() {
           >
             <ListItemText
               primary={t("footer.links.1.links.0.text")}
-              sx={{ fontWeight: 300, fontSize: "1rem" }}
+              primaryTypographyProps={{
+                color:
+                  t("footer.links.1.links.0.path") === location.pathname
+                    ? "#fff"
+                    : "#6F6F6F",
+                fontWeight: 300,
+                fontSize: "1rem",
+                fontFamily: constContext.fontRegular,
+              }}
             />
           </ListItemButton>
           <ListItemButton
@@ -95,7 +141,15 @@ export default function FooterList() {
           >
             <ListItemText
               primary={t("footer.links.1.links.1.text")}
-              sx={{ fontWeight: 300, fontSize: "1rem" }}
+              primaryTypographyProps={{
+                color:
+                  t("footer.links.1.links.1.path") === location.pathname
+                    ? "#fff"
+                    : "#6F6F6F",
+                fontWeight: 300,
+                fontSize: "1rem",
+                fontFamily: constContext.fontRegular,
+              }}
             />
           </ListItemButton>
           <ListItemButton
@@ -105,7 +159,15 @@ export default function FooterList() {
           >
             <ListItemText
               primary={t("footer.links.1.links.2.text")}
-              sx={{ fontWeight: 300, fontSize: "1rem" }}
+              primaryTypographyProps={{
+                color:
+                  t("footer.links.1.links.2.path") === location.pathname
+                    ? "#fff"
+                    : "#6F6F6F",
+                fontWeight: 300,
+                fontSize: "1rem",
+                fontFamily: constContext.fontRegular,
+              }}
             />
           </ListItemButton>
         </List>
@@ -115,6 +177,7 @@ export default function FooterList() {
         <Typography
           variant="body1"
           color={"#6F6F6F"}
+          fontFamily={constContext.fontRegular}
           fontSize={"1rem"}
           fontWeight={300}
         >
@@ -128,7 +191,15 @@ export default function FooterList() {
           >
             <ListItemText
               primary={t("footer.links.2.links.0.text")}
-              sx={{ fontWeight: 300, fontSize: "1rem" }}
+              primaryTypographyProps={{
+                color:
+                  t("footer.links.2.links.0.path") === location.pathname
+                    ? "#fff"
+                    : "#6F6F6F",
+                fontWeight: 300,
+                fontSize: "1rem",
+                fontFamily: constContext.fontRegular,
+              }}
             />
           </ListItemButton>
           <ListItemButton
@@ -138,7 +209,15 @@ export default function FooterList() {
           >
             <ListItemText
               primary={t("footer.links.2.links.1.text")}
-              sx={{ fontWeight: 300, fontSize: "1rem" }}
+              primaryTypographyProps={{
+                color:
+                  t("footer.links.2.links.1.path") === location.pathname
+                    ? "#fff"
+                    : "#6F6F6F",
+                fontWeight: 300,
+                fontSize: "1rem",
+                fontFamily: constContext.fontRegular,
+              }}
             />
           </ListItemButton>
         </List>
