@@ -1,5 +1,6 @@
 import { Box, Stack, Typography } from "@mui/material";
-import bgImg from "../../../../assets/images/aboutPageBG.jpeg";
+import bgImg from "../../../../assets/images/aboutPageBG.png";
+import TImg from "../../../../assets/images/T-Letter.png";
 import { useContext } from "react";
 import { ConstantsContext } from "../../../../context/ConstantsContext";
 import { useTranslation } from "react-i18next";
@@ -40,9 +41,21 @@ export default function AboutPageHeroSection() {
           }}
         >
           {t("aboutPage.heroStatment")} <br />
+          <br />
           {t("aboutPage.heroStatment2")}
         </Typography>
       </Stack>
+      <Box
+        sx={{
+          position: "absolute",
+          top: "29%",
+          right: "10%",
+          width: "30rem",
+          height: "30rem",
+        }}
+      >
+        <img src={TImg} width={"93%"} height={"90%"} alt="tanan letter" />
+      </Box>
     </Box>
   );
 }

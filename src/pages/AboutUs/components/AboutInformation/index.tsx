@@ -36,7 +36,7 @@ export default function AboutInformation() {
         </Typography>
         <Typography
           variant="body1"
-          px={1}
+          p={1}
           fontFamily={constsContext.fontRegular}
           color={"#fff"}
           sx={{
@@ -63,7 +63,7 @@ export default function AboutInformation() {
         </Typography>
         <Typography
           variant="body1"
-          px={1}
+          p={1}
           fontFamily={constsContext.fontRegular}
           color={"#fff"}
           sx={{
@@ -90,7 +90,7 @@ export default function AboutInformation() {
         </Typography>
         <Typography
           variant="body1"
-          px={1}
+          p={1}
           fontFamily={constsContext.fontRegular}
           color={"#fff"}
           sx={{
@@ -117,7 +117,7 @@ export default function AboutInformation() {
         </Typography>
         <Typography
           variant="body1"
-          px={1}
+          p={1}
           fontFamily={constsContext.fontRegular}
           color={"#fff"}
           sx={{
