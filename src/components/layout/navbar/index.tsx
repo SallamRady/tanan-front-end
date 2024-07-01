@@ -3,13 +3,15 @@ import logo from "../../../assets/images/tananLogo.png";
 import logo2 from "../../../assets/images/tananLogo2.png";
 import NavbarDesktopView from "./components/Desktop";
 import HomeVideoBG from "../../../pages/Home/components/VideoBG";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import MobileNavbarView from "./components/mobile";
+import AboutPageHeroSection from "../../../pages/AboutUs/components/HeroSection";
 
 export default function MainNavbar() {
   // todo::declare and define component state and variables
   const navigator = useNavigate();
+  const location = useLocation();
   const [isHovered, setIsHovered] = useState(false);
 
   // todo::declare and define helper methods
@@ -66,7 +68,8 @@ export default function MainNavbar() {
       </Stack>
 
       {/* Hero Section */}
-      <HomeVideoBG />
+      {location.pathname === "/" && <HomeVideoBG />}
+      {location.pathname === "/about" && <AboutPageHeroSection />}
     </Stack>
   );
 }
