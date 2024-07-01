@@ -52,6 +52,10 @@ export default function AboutPageHeroSection() {
           right: "10%",
           width: "30rem",
           height: "30rem",
+          display: {
+            xs: "none",
+            md: "block",
+          },
         }}
       >
         <img src={TImg} width={"93%"} height={"90%"} alt="tanan letter" />
