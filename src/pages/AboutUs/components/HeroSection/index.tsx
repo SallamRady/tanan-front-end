@@ -30,7 +30,7 @@ export default function AboutPageHeroSection() {
       >
         <Typography
           variant="h2"
-          fontSize={"2.5rem"}
+          fontSize={"2.3rem"}
           fontWeight={constContext.boldFont}
           color={"#fff"}
           sx={{

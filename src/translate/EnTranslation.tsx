@@ -62,8 +62,8 @@ const EnTranslation = {
       {
         title: "Legal",
         links: [
-          { path: "/", text: "Privacy Policy" },
-          { path: "/", text: "Terms & Conditions" },
+          { path: "/legal", text: "Privacy Policy" },
+          { path: "/legal", text: "Terms & Conditions" },
         ],
       },
     ],

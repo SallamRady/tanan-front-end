@@ -42,7 +42,10 @@ export default function FooterList() {
                   t("footer.links.0.links.0.path") === location.pathname
                     ? "#fff"
                     : "#6F6F6F",
-                fontWeight: 300,
+                fontWeight:
+                  t("footer.links.0.links.1.path") === location.pathname
+                    ? 500
+                    : 300,
                 fontSize: "1rem",
                 fontFamily: constContext.fontRegular,
               }}
@@ -60,7 +63,10 @@ export default function FooterList() {
                   t("footer.links.0.links.1.path") === location.pathname
                     ? "#fff"
                     : "#6F6F6F",
-                fontWeight: 300,
+                fontWeight:
+                  t("footer.links.0.links.1.path") === location.pathname
+                    ? 500
+                    : 300,
                 fontSize: "1rem",
                 fontFamily: constContext.fontRegular,
               }}
@@ -78,7 +84,10 @@ export default function FooterList() {
                   t("footer.links.0.links.2.path") === location.pathname
                     ? "#fff"
                     : "#6F6F6F",
-                fontWeight: 300,
+                fontWeight:
+                  t("footer.links.0.links.1.path") === location.pathname
+                    ? 500
+                    : 300,
                 fontSize: "1rem",
                 fontFamily: constContext.fontRegular,
               }}
@@ -96,7 +105,10 @@ export default function FooterList() {
                   t("footer.links.0.links.3.path") === location.pathname
                     ? "#fff"
                     : "#6F6F6F",
-                fontWeight: 300,
+                fontWeight:
+                  t("footer.links.0.links.1.path") === location.pathname
+                    ? 500
+                    : 300,
                 fontSize: "1rem",
                 fontFamily: constContext.fontRegular,
               }}
@@ -128,7 +140,10 @@ export default function FooterList() {
                   t("footer.links.1.links.0.path") === location.pathname
                     ? "#fff"
                     : "#6F6F6F",
-                fontWeight: 300,
+                fontWeight:
+                  t("footer.links.0.links.1.path") === location.pathname
+                    ? 500
+                    : 300,
                 fontSize: "1rem",
                 fontFamily: constContext.fontRegular,
               }}
@@ -146,7 +161,10 @@ export default function FooterList() {
                   t("footer.links.1.links.1.path") === location.pathname
                     ? "#fff"
                     : "#6F6F6F",
-                fontWeight: 300,
+                fontWeight:
+                  t("footer.links.0.links.1.path") === location.pathname
+                    ? 500
+                    : 300,
                 fontSize: "1rem",
                 fontFamily: constContext.fontRegular,
               }}
@@ -164,7 +182,10 @@ export default function FooterList() {
                   t("footer.links.1.links.2.path") === location.pathname
                     ? "#fff"
                     : "#6F6F6F",
-                fontWeight: 300,
+                fontWeight:
+                  t("footer.links.0.links.1.path") === location.pathname
+                    ? 500
+                    : 300,
                 fontSize: "1rem",
                 fontFamily: constContext.fontRegular,
               }}
@@ -196,7 +217,10 @@ export default function FooterList() {
                   t("footer.links.2.links.0.path") === location.pathname
                     ? "#fff"
                     : "#6F6F6F",
-                fontWeight: 300,
+                fontWeight:
+                  t("footer.links.0.links.1.path") === location.pathname
+                    ? 500
+                    : 300,
                 fontSize: "1rem",
                 fontFamily: constContext.fontRegular,
               }}
@@ -214,7 +238,10 @@ export default function FooterList() {
                   t("footer.links.2.links.1.path") === location.pathname
                     ? "#fff"
                     : "#6F6F6F",
-                fontWeight: 300,
+                fontWeight:
+                  t("footer.links.0.links.1.path") === location.pathname
+                    ? 500
+                    : 300,
                 fontSize: "1rem",
                 fontFamily: constContext.fontRegular,
               }}

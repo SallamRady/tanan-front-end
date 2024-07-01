@@ -28,6 +28,7 @@ export default function AboutInformation() {
           sx={{
             height: "3rem",
             pl: 1,
+            py: 4,
             backgroundColor: "#0a0410",
             color: "#fff",
           }}
@@ -55,6 +56,7 @@ export default function AboutInformation() {
           sx={{
             height: "3rem",
             pl: 1,
+            py: 4,
             backgroundColor: "#0a0410",
             color: "#fff",
           }}
@@ -82,6 +84,7 @@ export default function AboutInformation() {
           sx={{
             height: "3rem",
             pl: 1,
+            py: 4,
             backgroundColor: "#0a0410",
             color: "#fff",
           }}
@@ -109,6 +112,7 @@ export default function AboutInformation() {
           sx={{
             height: "3rem",
             pl: 1,
+            py: 4,
             backgroundColor: "#0a0410",
             color: "#fff",
           }}

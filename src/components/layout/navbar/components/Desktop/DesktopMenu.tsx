@@ -21,7 +21,6 @@ export default function DesktopMenu() {
     >
       <NavbarLink text={t("navbar.links.home")} href="/" />
       <NavbarLink text={t("navbar.links.about")} href="/about" />
-      <NavbarLink text={t("navbar.links.achievements")} href="/achievements" />
       <NavbarLink text={t("navbar.links.services")} href="/services" />
       <NavbarLink text={t("navbar.links.contact")} href="/contact" />
     </Stack>

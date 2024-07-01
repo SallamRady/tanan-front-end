@@ -40,11 +40,6 @@ export default function MobileMenu(props: PropsType) {
           icon={<InfoIcon />}
         />
         <SingleMenuItem
-          handleClick={() => navigator("/achievements")}
-          text={t("navbar.links.achievements")}
-          icon={<EmojiEventsIcon />}
-        />
-        <SingleMenuItem
           handleClick={() => navigator("/services")}
           text={t("navbar.links.services")}
           icon={<AutoAwesomeMosaicIcon />}
