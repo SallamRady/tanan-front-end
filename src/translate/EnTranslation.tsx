@@ -68,6 +68,31 @@ const EnTranslation = {
       },
     ],
   },
+  aboutPage: {
+    heroStatment: "We are Tanan",
+    heroStatment2: "Unlimited creative capabilities . . .",
+    information: [
+      {
+        title: "Well known",
+        text: "We, at Tanan, are renowned for our seamless integration of creativity and profound expertise in digital marketing and creative content production. We provide solutions that guarantee you access.",
+      },
+      {
+        title: "Accumulated expertise",
+        text: "Our team brings together talents and capabilities to add value to our clients' businesses.",
+      },
+      {
+        title: "Depth and local insight",
+        text: "Blending authenticity with ambition to align with the Kingdom's Vision 2030.",
+      },
+      { title: "Close-knit relationships", text: "Across the three sectors." },
+    ],
+    features: {
+      title: "What Makes Us Unique",
+      statment:
+        "We combine Digital Marketing and Creative Content Production to craftUnique Content for you.",
+      button: "Contact US",
+    },
+  },
   buttons: {
     viewMore: "View More",
   },

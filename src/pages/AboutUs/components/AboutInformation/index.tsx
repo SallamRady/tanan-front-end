@@ -1,10 +1,12 @@
 import { Stack, Typography } from "@mui/material";
 import { useContext } from "react";
 import { ConstantsContext } from "../../../../context/ConstantsContext";
+import { useTranslation } from "react-i18next";
 
 export default function AboutInformation() {
   // todo::declare and define component state and variable
   const constsContext = useContext(ConstantsContext);
+  let { t } = useTranslation();
 
   // return component ui
   return (
@@ -30,7 +32,7 @@ export default function AboutInformation() {
             color: "#fff",
           }}
         >
-          Well known
+          {t("aboutPage.information.0.title")}
         </Typography>
         <Typography
           variant="body1"
@@ -42,9 +44,7 @@ export default function AboutInformation() {
             bgcolor: "#8f65eb",
           }}
         >
-          We, at Tanan, are renowned for our seamless integration of creativity
-          and profound expertise in digital marketing and creative content
-          production. We provide solutions that guarantee you access.
+          {t("aboutPage.information.0.text")}
         </Typography>
       </Stack>
 
@@ -59,7 +59,7 @@ export default function AboutInformation() {
             color: "#fff",
           }}
         >
-          Accumulated expertise
+          {t("aboutPage.information.1.title")}
         </Typography>
         <Typography
           variant="body1"
@@ -71,8 +71,7 @@ export default function AboutInformation() {
             bgcolor: "#8f65eb",
           }}
         >
-          Our team brings together talents and capabilities to add value to our
-          clients' businesses.
+          {t("aboutPage.information.1.text")}
         </Typography>
       </Stack>
 
@@ -87,7 +86,7 @@ export default function AboutInformation() {
             color: "#fff",
           }}
         >
-          Depth and local insight
+          {t("aboutPage.information.2.title")}
         </Typography>
         <Typography
           variant="body1"
@@ -99,8 +98,7 @@ export default function AboutInformation() {
             bgcolor: "#8f65eb",
           }}
         >
-          Blending authenticity with ambition to align with the Kingdom's Vision
-          2030.
+          {t("aboutPage.information.2.text")}
         </Typography>
       </Stack>
 
@@ -115,7 +113,7 @@ export default function AboutInformation() {
             color: "#fff",
           }}
         >
-          Close-knit relationships
+          {t("aboutPage.information.3.title")}
         </Typography>
         <Typography
           variant="body1"
@@ -127,7 +125,7 @@ export default function AboutInformation() {
             bgcolor: "#8f65eb",
           }}
         >
-          Across the three sectors.
+          {t("aboutPage.information.3.text")}
         </Typography>
       </Stack>
     </Stack>

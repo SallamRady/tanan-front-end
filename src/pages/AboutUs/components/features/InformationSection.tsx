@@ -2,36 +2,26 @@ import { Stack, Typography } from "@mui/material";
 import { useContext } from "react";
 import { ConstantsContext } from "../../../../context/ConstantsContext";
 import MainButton from "../../../../components/MainButton";
+import { useTranslation } from "react-i18next";
 
 export default function InformationSection() {
   // todo::declare and define component state and variables
   const contsContext = useContext(ConstantsContext);
+  let { t } = useTranslation();
 
   // * return component ui.
   return (
     <Stack spacing={4} width={"100%"} p={5}>
       <Typography variant="h4" fontFamily={contsContext.boldFont}>
-        What Makes Us Unique
+        {t("aboutPage.features.title")}
       </Typography>
       <Typography variant="body1" fontFamily={contsContext.fontRegular}>
-        We combine{" "}
-        <span style={{ fontFamily: contsContext.mediumFont }}>
-          Digital Marketing
-        </span>{" "}
-        and{" "}
-        <span style={{ fontFamily: contsContext.mediumFont }}>
-          Creative Content Production
-        </span>{" "}
-        to craft
-        <span style={{ fontFamily: contsContext.mediumFont }}>
-          Unique Content
-        </span>{" "}
-        for you.
+        {t("aboutPage.features.statment")}
       </Typography>
       <MainButton
         variant="outlined"
         handleClick={() => {}}
-        text="Contact Us"
+        text={t("aboutPage.features.button")}
         fullWidth={false}
         width="234px"
       />

@@ -2,10 +2,13 @@ import { Box, Stack, Typography } from "@mui/material";
 import bgImg from "../../../../assets/images/aboutPageBG.jpeg";
 import { useContext } from "react";
 import { ConstantsContext } from "../../../../context/ConstantsContext";
+import { useTranslation } from "react-i18next";
 
 export default function AboutPageHeroSection() {
   // todo::declare and define component state and variables
   const constContext = useContext(ConstantsContext);
+  let { t } = useTranslation();
+
   // return component ui.
   return (
     <Box
@@ -36,8 +39,8 @@ export default function AboutPageHeroSection() {
             },
           }}
         >
-          We are Tanan <br />
-          Unlimited creative capabilities . . .
+          {t("aboutPage.heroStatment")} <br />
+          {t("aboutPage.heroStatment2")}
         </Typography>
       </Stack>
     </Box>
