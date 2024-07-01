@@ -1,4 +1,4 @@
-import { Stack } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import HomeServices from "./components/services";
 import HomeBridge from "./components/bridge";
 import ClientsSection from "./components/clients";

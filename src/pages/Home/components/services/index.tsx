@@ -1,4 +1,4 @@
-import { Box, Grid, Skeleton } from "@mui/material";
+import { Box, Grid, Skeleton, Stack } from "@mui/material";
 import { useState } from "react";
 import ServicesListIndex from "./listServices/ServicesList";
 import ServiceNumber1 from "./service-1";
@@ -28,117 +28,121 @@ export default function HomeServices() {
 
   // * return component ui.
   return (
-    <Grid container pt={15}>
-      <Grid item xs={12} md={6} pl={4}>
-        {/* list of services text */}
-        <ServicesListIndex
-          activeServiceId={activeServiceId}
-          setActiveServiceId={setActiveServiceId}
-        />
-        {/* in service 1 */}
-        {activeServiceId === "service-1" && (
-          <Box
-            width={"100%"}
-            mt={10}
-            sx={{
-              display: {
-                xs: "none",
-                md: "block",
-              },
-            }}
-          >
-            <Masonry columns={2} spacing={2}>
-              <img
-                className="image-fade-in"
-                src={s1Img3}
-                alt="our services"
-                width={"90%"}
-                height={"361.25px"}
-              />
-              <img
-                className="image-fade-in"
-                src={s1Img4}
-                alt="our services"
-                width={"90%"}
-                height={"447.25px"}
-                style={{
-                  marginTop: "40px",
+    <Stack justifyContent={"center"} alignItems={"center"} width={"100%"}>
+      <Stack spacing={2} width={"96%"}>
+        <Grid container pt={15}>
+          <Grid item xs={12} md={6} pl={4}>
+            {/* list of services text */}
+            <ServicesListIndex
+              activeServiceId={activeServiceId}
+              setActiveServiceId={setActiveServiceId}
+            />
+            {/* in service 1 */}
+            {activeServiceId === "service-1" && (
+              <Box
+                width={"100%"}
+                mt={10}
+                sx={{
+                  display: {
+                    xs: "none",
+                    md: "block",
+                  },
                 }}
-              />
-            </Masonry>
-          </Box>
-        )}
-        {activeServiceId === "service-2" && (
-          <>
-            <Box
-              width={"100%"}
-              mt={10}
-              sx={{
-                display: {
-                  xs: "none",
-                  md: "block",
-                },
-              }}
-            >
-              <Masonry columns={2} spacing={2}>
-                <Skeleton
-                  variant="rectangular"
-                  height={200}
+              >
+                <Masonry columns={2} spacing={2}>
+                  <img
+                    className="image-fade-in"
+                    src={s1Img3}
+                    alt="our services"
+                    width={"90%"}
+                    height={"361.25px"}
+                  />
+                  <img
+                    className="image-fade-in"
+                    src={s1Img4}
+                    alt="our services"
+                    width={"90%"}
+                    height={"447.25px"}
+                    style={{
+                      marginTop: "40px",
+                    }}
+                  />
+                </Masonry>
+              </Box>
+            )}
+            {activeServiceId === "service-2" && (
+              <>
+                <Box
+                  width={"100%"}
+                  mt={10}
                   sx={{
-                    bgcolor: "#fff",
+                    display: {
+                      xs: "none",
+                      md: "block",
+                    },
                   }}
-                />
-                <img
-                  className="image-fade-in"
-                  src={s2Img5}
-                  alt="our services"
-                  width={"90%"}
-                  height={"361.25px"}
-                  style={{
-                    float: "right",
-                  }}
-                />
-              </Masonry>
-            </Box>
-          </>
-        )}
-        {activeServiceId === "service-3" && (
-          <>
-            <Box
-              width={"100%"}
-              mt={18}
-              sx={{
-                display: {
-                  xs: "none",
-                  md: "block",
-                },
-              }}
-            >
-              <Masonry columns={2} spacing={2}>
-                <Skeleton
-                  variant="rectangular"
-                  height={200}
+                >
+                  <Masonry columns={2} spacing={2}>
+                    <Skeleton
+                      variant="rectangular"
+                      height={200}
+                      sx={{
+                        bgcolor: "#fff",
+                      }}
+                    />
+                    <img
+                      className="image-fade-in"
+                      src={s2Img5}
+                      alt="our services"
+                      width={"90%"}
+                      height={"361.25px"}
+                      style={{
+                        float: "right",
+                      }}
+                    />
+                  </Masonry>
+                </Box>
+              </>
+            )}
+            {activeServiceId === "service-3" && (
+              <>
+                <Box
+                  width={"100%"}
+                  mt={18}
                   sx={{
-                    bgcolor: "#fff",
+                    display: {
+                      xs: "none",
+                      md: "block",
+                    },
                   }}
-                />
-                <img
-                  className="image-fade-in"
-                  src={s3Img5}
-                  alt="our services"
-                  width={"90%"}
-                  height={"371.25px"}
-                  style={{
-                    float: "right",
-                  }}
-                />
-              </Masonry>
-            </Box>
-          </>
-        )}
-      </Grid>
-      {/* show service view */}
-      {ServiceWrapper()}
-    </Grid>
+                >
+                  <Masonry columns={2} spacing={2}>
+                    <Skeleton
+                      variant="rectangular"
+                      height={200}
+                      sx={{
+                        bgcolor: "#fff",
+                      }}
+                    />
+                    <img
+                      className="image-fade-in"
+                      src={s3Img5}
+                      alt="our services"
+                      width={"90%"}
+                      height={"371.25px"}
+                      style={{
+                        float: "right",
+                      }}
+                    />
+                  </Masonry>
+                </Box>
+              </>
+            )}
+          </Grid>
+          {/* show service view */}
+          {ServiceWrapper()}
+        </Grid>
+      </Stack>
+    </Stack>
   );
 }

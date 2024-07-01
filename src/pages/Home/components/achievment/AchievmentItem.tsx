@@ -8,9 +8,9 @@ export default function AchievmentItem(props: PropsType) {
 
   // return ui.
   return (
-    <Stack spacing={1} justifyContent={"center"} alignItems={"center"}>
+    <Stack spacing={1} justifyContent={"center"} alignItems={"center"} my={2}>
       <Typography
-        variant="body1"
+        variant="body2"
         fontSize={"2rem"}
         fontWeight={700}
         fontFamily={constContext.boldFont}
@@ -19,7 +19,8 @@ export default function AchievmentItem(props: PropsType) {
       </Typography>
       <Typography
         variant="body1"
-        fontSize={"18px"}
+        fontSize={"24px"}
+        textAlign={"center"}
         fontFamily={constContext.mediumFont}
       >
         {props.text}
