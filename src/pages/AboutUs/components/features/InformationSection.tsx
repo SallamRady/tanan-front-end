@@ -3,10 +3,12 @@ import { useContext } from "react";
 import { ConstantsContext } from "../../../../context/ConstantsContext";
 import MainButton from "../../../../components/MainButton";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 export default function InformationSection() {
   // todo::declare and define component state and variables
   const contsContext = useContext(ConstantsContext);
+  const navigator = useNavigate();
   let { t } = useTranslation();
 
   // * return component ui.
@@ -20,7 +22,7 @@ export default function InformationSection() {
       </Typography>
       <MainButton
         variant="outlined"
-        handleClick={() => {}}
+        handleClick={() => navigator("/contact")}
         text={t("aboutPage.features.button")}
         fullWidth={false}
         width="234px"

@@ -43,6 +43,7 @@ export default function AboutPageHeroSection() {
           {t("aboutPage.heroStatment")} <br />
           <br />
           {t("aboutPage.heroStatment2")}
+          <div className="AboutLoader"></div>
         </Typography>
       </Stack>
       <Box

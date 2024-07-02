@@ -4,11 +4,13 @@ import MainButton from "../../../../../components/MainButton";
 import SingleServiceItem from "./SingleServiceItem";
 import { ConstantsContext } from "../../../../../context/ConstantsContext";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 export default function ServicesListIndex(props: PropsType) {
   // TODO::declare and define component state and variables
   const { ServicesDataList } = useContext(ConstantsContext);
   const constContext = useContext(ConstantsContext);
+  const navigator = useNavigate();
   let { t } = useTranslation();
 
   // TODO::declare and define component helper methods
@@ -39,7 +41,7 @@ export default function ServicesListIndex(props: PropsType) {
       <Box my={4}>
         <MainButton
           text={t("buttons.viewMore")}
-          handleClick={() => {}}
+          handleClick={() => navigator("/services")}
           color="secondary"
         />
       </Box>

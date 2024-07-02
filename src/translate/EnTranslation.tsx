@@ -70,7 +70,7 @@ const EnTranslation = {
   },
   aboutPage: {
     heroStatment: "We are Tanan",
-    heroStatment2: "Unlimited creative capabilities . . .",
+    heroStatment2: "Unlimited creative capabilities",
     information: [
       {
         title: "Well known",

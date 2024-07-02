@@ -73,7 +73,7 @@ const ArTranslation = {
   },
   aboutPage: {
     heroStatment: "نحن طنان",
-    heroStatment2: "صلاحيات إبداعية غير محدودة...",
+    heroStatment2: "صلاحيات إبداعية غير محدودة",
     information: [
       {
         title: "معروفين",
