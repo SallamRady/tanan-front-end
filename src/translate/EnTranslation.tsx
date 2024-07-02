@@ -93,6 +93,9 @@ const EnTranslation = {
       button: "Contact US",
     },
   },
+  servicesPage: {
+    statement: "What we offer",
+  },
   buttons: {
     viewMore: "View More",
   },

@@ -96,6 +96,9 @@ const ArTranslation = {
       button: "تواصل معنا",
     },
   },
+  servicesPage: {
+    statement: "ما نقدمه لكم",
+  },
   buttons: {
     viewMore: "عرض المزيد",
   },
