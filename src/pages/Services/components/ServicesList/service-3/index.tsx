@@ -71,7 +71,7 @@ export default function ServiceNum3() {
           width={"90%"}
           height={"447px"}
           style={{
-            marginTop: "40px",
+            marginTop: "20px",
           }}
         />
         <img

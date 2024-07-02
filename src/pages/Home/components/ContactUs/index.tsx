@@ -60,7 +60,7 @@ export default function ContactUsSection() {
         alignItems: "center",
         color: "#fff",
         transition: "all 1s ease-in-out",
-        opacity: hide ? 0 : 1,
+        opacity: hide ? 0.1 : 1,
       }}
     >
       <Stack

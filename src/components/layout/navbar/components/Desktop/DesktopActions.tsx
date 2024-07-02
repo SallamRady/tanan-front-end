@@ -4,9 +4,11 @@ import { LangContext } from "../../../../../context/LangContext";
 import MainButton from "../../../../MainButton";
 import { useTranslation } from "react-i18next";
 import { ConstantsContext } from "../../../../../context/ConstantsContext";
+import { useLocation } from "react-router-dom";
 
 export default function NavbarDesktopActions() {
   // TODO::declare and define component state and variables
+  const location = useLocation();
   const langContext = useContext(LangContext);
   const constContext = useContext(ConstantsContext);
   const lang = langContext.lang();
@@ -40,6 +42,8 @@ export default function NavbarDesktopActions() {
       </Button>
       <MainButton
         text={t("navbar.actions.FreeConsultation")}
+        variant={location.pathname === "/contact" ? "outlined" : "contained"}
+        color={location.pathname === "/contact" ? "inherit" : "primary"}
         handleClick={() => {}}
       />
     </Stack>

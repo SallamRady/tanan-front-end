@@ -8,6 +8,7 @@ import { useState } from "react";
 import MobileNavbarView from "./components/mobile";
 import AboutPageHeroSection from "../../../pages/AboutUs/components/HeroSection";
 import ServicesHeroSection from "../../../pages/Services/components/HeroSection/ServicesHeroSection";
+import ContactUsPageHeroSection from "../../../pages/ContactUs/components/HeroSection";
 
 export default function MainNavbar() {
   // todo::declare and define component state and variables
@@ -72,6 +73,7 @@ export default function MainNavbar() {
       {location.pathname === "/" && <HomeVideoBG />}
       {location.pathname === "/about" && <AboutPageHeroSection />}
       {location.pathname === "/services" && <ServicesHeroSection />}
+      {location.pathname === "/contact" && <ContactUsPageHeroSection />}
     </Stack>
   );
 }
