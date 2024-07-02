@@ -95,6 +95,12 @@ const EnTranslation = {
   },
   servicesPage: {
     statement: "What we offer",
+    service1Text:
+      "At Tanan, we strive to create an ideal approach that balances artistic beauty with functional performance for the brand.",
+    service2Text:
+      "We understand your needs and then create a comprehensive marketing campaign plan to help you achieve your goals and aspirations.",
+    service3Text:
+      "Because words have impact, change choices, and shape decisions, we always consider the right words and express them in a way that reflects you and achieves your goals.",
   },
   buttons: {
     viewMore: "View More",

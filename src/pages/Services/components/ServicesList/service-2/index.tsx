@@ -19,11 +19,13 @@ import s2Img12 from "../../../../../assets/images/services/s2/s2-i12.png";
 import s2Img13 from "../../../../../assets/images/services/s2/s2-i13.png";
 import s2Img14 from "../../../../../assets/images/services/s2/s2-i14.png";
 import s2Img15 from "../../../../../assets/images/services/s2/s2-i15.png";
+import { useTranslation } from "react-i18next";
 
 export default function ServiceNum2() {
   // TODO::declare and define component state and variables
   const constContext = useContext(ConstantsContext);
   const theme = useTheme();
+  let { t } = useTranslation();
   const isXs = useMediaQuery(theme.breakpoints.down("xs"));
   const isSm = useMediaQuery(theme.breakpoints.between("xs", "sm"));
   let columns = 4;
@@ -45,9 +47,7 @@ export default function ServiceNum2() {
         fontFamily={constContext.mediumFont}
         color={"#000"}
       >
-        We understand your needs and then create a comprehensive marketing
-        <br />
-        campaign plan to help you achieve your goals and aspirations.
+        {t("servicesPage.service2Text")}
       </Typography>
       <Masonry spacing={2} columns={columns}>
         <img

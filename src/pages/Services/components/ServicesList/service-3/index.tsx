@@ -9,11 +9,13 @@ import s3Img2 from "../../../../../assets/images/services/s3/s3-i2.png";
 import s3Img3 from "../../../../../assets/images/services/s3/s3-i3.png";
 import s3Img4 from "../../../../../assets/images/services/s3/s3-i4.png";
 import s3Img5 from "../../../../../assets/images/services/s3/s3-i5.png";
+import { useTranslation } from "react-i18next";
 
 export default function ServiceNum3() {
   // TODO::declare and define component state and variables
   const constContext = useContext(ConstantsContext);
   const theme = useTheme();
+  let { t } = useTranslation();
   const isXs = useMediaQuery(theme.breakpoints.down("xs"));
   const isSm = useMediaQuery(theme.breakpoints.between("xs", "sm"));
   let columns = 4;
@@ -35,11 +37,7 @@ export default function ServiceNum3() {
         fontFamily={constContext.mediumFont}
         color={"#000"}
       >
-        Because words have impact, change choices, and shape decisions, we{" "}
-        <br />
-        always consider the right words and express them in a way that reflects{" "}
-        <br />
-        you and achieves your goals.
+        {t("servicesPage.service3Text")}
       </Typography>
       <Masonry spacing={2} columns={columns}>
         <img

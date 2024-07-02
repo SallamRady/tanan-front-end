@@ -12,11 +12,13 @@ import s1Img5 from "../../../../../assets/images/services/s1/s1-i5.png";
 import s1Img6 from "../../../../../assets/images/services/s1/s1-i6.png";
 import s1Img7 from "../../../../../assets/images/services/s1/s1-i7.png";
 import s1Img8 from "../../../../../assets/images/services/s1/s1-i8.png";
+import { useTranslation } from "react-i18next";
 
 export default function ServiceNum1() {
   // TODO::declare and define component state and variables
   const constContext = useContext(ConstantsContext);
   const theme = useTheme();
+  let { t } = useTranslation();
   const isXs = useMediaQuery(theme.breakpoints.down("xs"));
   const isSm = useMediaQuery(theme.breakpoints.between("xs", "sm"));
   let columns = 4;
@@ -38,9 +40,7 @@ export default function ServiceNum1() {
         fontFamily={constContext.mediumFont}
         color={"#000"}
       >
-        At Tanan, we strive to create an ideal approach that balances artistic{" "}
-        <br />
-        beauty with functional performance for the brand.
+        {t("servicesPage.service1Text")}
       </Typography>
       <Masonry
         spacing={2}
