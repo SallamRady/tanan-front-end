@@ -12,11 +12,12 @@ import { useContext, useMemo } from "react";
 import { LangContext } from "./context/LangContext";
 import MainRouterProvider from "./routes";
 import MainNavbar from "./components/layout/navbar";
-import "./index.css";
 import MainFooter from "./components/layout/footer/MainFooter";
 import { ThemeProvider } from "@mui/material";
 import ArTheme from "./themes/TananArTheme";
 import EnTheme from "./themes/TananEnTheme";
+import "./index.css";
+import "./App.css";
 
 // TODO:: Create rtl cache
 const cacheRtl = createCache({

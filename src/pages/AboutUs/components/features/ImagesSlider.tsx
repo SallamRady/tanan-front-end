@@ -6,11 +6,15 @@ import Img4 from "../../../../assets/images/aboutFeatures/about4.png";
 import AdjustIcon from "@mui/icons-material/Adjust";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import { useState } from "react";
+import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
+import { useContext, useState } from "react";
+import { LangContext } from "../../../../context/LangContext";
 
 export default function ImagesSlider() {
   // todo::declare and define component state and variables
   const [imagesOrders, setImagesOrders] = useState([1, 2, 3, 4]);
+  const langContext = useContext(LangContext);
+  const lang = langContext.lang();
 
   // todo::declare and define helper methods
   const handleClick = () => {
@@ -35,7 +39,6 @@ export default function ImagesSlider() {
         return Img4;
     }
   };
-
 
   // * return component ui.
   return (
@@ -103,12 +106,16 @@ export default function ImagesSlider() {
                   top: "50%",
                   left: "46%",
                   boxShadow: "1px 1px 1px 2px lightgray",
-                  ":hover":{
+                  ":hover": {
                     background: "#fff",
-                  }
+                  },
                 }}
               >
-                <ChevronRightIcon />
+                {lang === "ar" ? (
+                  <KeyboardArrowLeftIcon />
+                ) : (
+                  <ChevronRightIcon />
+                )}
               </IconButton>
             </Grid>
             <Stack

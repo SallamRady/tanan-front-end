@@ -5,6 +5,7 @@ import MainButton from "../../../../MainButton";
 import { useTranslation } from "react-i18next";
 import { ConstantsContext } from "../../../../../context/ConstantsContext";
 import { useLocation } from "react-router-dom";
+import redirectToWhatsApp from "../../../../../methods/social/RedirectToWhatsApp";
 
 export default function NavbarDesktopActions() {
   // TODO::declare and define component state and variables
@@ -44,7 +45,7 @@ export default function NavbarDesktopActions() {
         text={t("navbar.actions.FreeConsultation")}
         variant={location.pathname === "/contact" ? "outlined" : "contained"}
         color={location.pathname === "/contact" ? "inherit" : "primary"}
-        handleClick={() => {}}
+        handleClick={() => redirectToWhatsApp()}
       />
     </Stack>
   );

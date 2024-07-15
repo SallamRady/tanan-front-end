@@ -105,14 +105,14 @@
 .AboutLoader {
   width: 60px;
   display: inline-block;
-  aspect-ratio: 2;
+  aspect-ratio: 3;
   --_g: no-repeat radial-gradient(circle closest-side, #fff 90%, #0000);
   background:
     var(--_g) 0% 50%,
     var(--_g) 50% 50%,
     var(--_g) 100% 50%;
   background-size: calc(100%/3) 50%;
-  animation: l3 1s 5 linear;
+  animation: l3 1s 2 linear;
 }
 
 @keyframes l3 {

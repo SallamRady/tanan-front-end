@@ -51,14 +51,14 @@ export default function ServiceNum2() {
       </Typography>
       <Masonry spacing={2} columns={columns}>
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s2Img6}
           alt="our services"
           width={"90%"}
           height={"359px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s2Img4}
           alt="our services"
           width={"90%"}
@@ -68,21 +68,21 @@ export default function ServiceNum2() {
           }}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s2Img7}
           alt="our services"
           width={"90%"}
           height={"368px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s2Img1}
           alt="our services"
           width={"90%"}
           height={"368px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s2Img8}
           alt="our services"
           width={"90%"}
@@ -92,42 +92,42 @@ export default function ServiceNum2() {
           }}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s2Img9}
           alt="our services"
           width={"90%"}
           height={"352px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s2Img5}
           alt="our services"
           width={"90%"}
           height={"361px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s2Img10}
           alt="our services"
           width={"90%"}
           height={"368px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s2Img11}
           alt="our services"
           width={"90%"}
           height={"361px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s2Img3}
           alt="our services"
           width={"90%"}
           height={"403px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s2Img2}
           alt="our services"
           width={"90%"}
@@ -135,28 +135,28 @@ export default function ServiceNum2() {
         />
 
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s2Img12}
           alt="our services"
           width={"90%"}
           height={"359px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s2Img13}
           alt="our services"
           width={"90%"}
           height={"361px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s2Img15}
           alt="our services"
           width={"90%"}
           height={"359px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s2Img14}
           alt="our services"
           width={"90%"}

@@ -13,6 +13,8 @@ import DraftsOutlinedIcon from "@mui/icons-material/DraftsOutlined";
 import { useTranslation } from "react-i18next";
 import { useContext, useEffect, useRef, useState } from "react";
 import { ConstantsContext } from "../../../../context/ConstantsContext";
+import "../../../../App.css";
+import redirectToWhatsApp from "../../../../methods/social/RedirectToWhatsApp";
 
 export default function ContactUsSection() {
   // TODO::declare and define our state and variables
@@ -54,14 +56,13 @@ export default function ContactUsSection() {
         margin: 0,
         padding: 0,
         backgroundImage: `url(${BgImg})`,
-        height: "46rem",
-        backgroundSize: "100% 100%",
         display: "flex",
         alignItems: "center",
         color: "#fff",
         transition: "all 1s ease-in-out",
         opacity: hide ? 0.1 : 1,
       }}
+      className="HomeCOntactSection"
     >
       <Stack
         spacing={2}
@@ -99,6 +100,8 @@ export default function ContactUsSection() {
             </ListItemIcon>
             <ListItemText
               primary="+966 50 588 2911"
+              onClick={() => redirectToWhatsApp()}
+              sx={{ cursor: "pointer" }}
               primaryTypographyProps={{
                 fontFamily: constContext.mediumFont,
               }}
@@ -109,12 +112,18 @@ export default function ContactUsSection() {
             <ListItemIcon>
               <DraftsOutlinedIcon sx={{ color: "#fff" }} />
             </ListItemIcon>
-            <ListItemText
-              primary="yahala@tannan.com"
-              primaryTypographyProps={{
-                fontFamily: constContext.mediumFont,
+            <Typography
+              component={"a"}
+              href="mailto:yahala@tannan.com"
+              variant="body2"
+              fontFamily={constContext.mediumFont}
+              sx={{
+                color: "#fff",
+                textDecoration: "none",
               }}
-            />
+            >
+              yahala@tannan.com
+            </Typography>
           </ListItem>
         </List>
       </Stack>

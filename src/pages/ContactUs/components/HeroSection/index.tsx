@@ -13,6 +13,7 @@ import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import DraftsOutlinedIcon from "@mui/icons-material/DraftsOutlined";
 import { ConstantsContext } from "../../../../context/ConstantsContext";
 import bgImg from "../../../../assets/images/contactPageBG.jpeg";
+import redirectToWhatsApp from "../../../../methods/social/RedirectToWhatsApp";
 
 export default function ContactUsPageHeroSection() {
   // todo::declare and define component state and variables
@@ -46,7 +47,7 @@ export default function ContactUsPageHeroSection() {
             backgroundPosition: "center",
             transition: "transform 0.3s ease-in-out",
           },
-          '&:hover::before': {
+          "&:hover::before": {
             transform: "scale(1.1)",
           },
           pl: {
@@ -80,6 +81,8 @@ export default function ContactUsPageHeroSection() {
               </ListItemIcon>
               <ListItemText
                 primary="+966 50 588 2911"
+                onClick={() => redirectToWhatsApp()}
+                sx={{ cursor: "pointer" }}
                 primaryTypographyProps={{
                   fontFamily: constContext.mediumFont,
                 }}
@@ -90,12 +93,18 @@ export default function ContactUsPageHeroSection() {
               <ListItemIcon>
                 <DraftsOutlinedIcon sx={{ color: "#fff" }} />
               </ListItemIcon>
-              <ListItemText
-                primary="yahala@tannan.com"
-                primaryTypographyProps={{
-                  fontFamily: constContext.mediumFont,
+              <Typography
+                component={"a"}
+                href="mailto:yahala@tannan.com"
+                variant="body2"
+                fontFamily={constContext.mediumFont}
+                sx={{
+                  color: "#fff",
+                  textDecoration: "none",
                 }}
-              />
+              >
+                yahala@tannan.com
+              </Typography>
             </ListItem>
           </List>
         </Stack>
