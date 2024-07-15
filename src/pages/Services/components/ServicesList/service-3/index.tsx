@@ -41,14 +41,14 @@ export default function ServiceNum3() {
       </Typography>
       <Masonry spacing={2} columns={columns}>
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s3Img1}
           alt="our services"
           width={"90%"}
           height={"359px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s3Img2}
           alt="our services"
           width={"90%"}
@@ -58,14 +58,14 @@ export default function ServiceNum3() {
           }}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s3Img3}
           alt="our services"
           width={"90%"}
           height={"361px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s3Img4}
           alt="our services"
           width={"90%"}
@@ -75,7 +75,7 @@ export default function ServiceNum3() {
           }}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s3Img5}
           alt="our services"
           width={"90%"}

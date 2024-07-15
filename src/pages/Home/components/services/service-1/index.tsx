@@ -13,14 +13,14 @@ export default function ServiceNumber1() {
       <Grid item xs={12} md={6}>
         <Masonry columns={2} spacing={2}>
           <img
-            className="image-fade-in"
+            className="image-fade-in imageClass"
             src={s1Img1}
             alt="our services"
             width={"90%"}
             height={"361.25px"}
           />
           <img
-            className="image-fade-in"
+            className="image-fade-in imageClass"
             src={s1Img2}
             alt="our services"
             width={"90%"}
@@ -30,14 +30,14 @@ export default function ServiceNumber1() {
             }}
           />
           <img
-            className="image-fade-in"
+            className="image-fade-in imageClass"
             src={s1Img5}
             alt="our services"
             width={"90%"}
             height={"447.25px"}
           />
           <img
-            className="image-fade-in"
+            className="image-fade-in imageClass"
             src={s1Img6}
             alt="our services"
             width={"90%"}
@@ -55,14 +55,14 @@ export default function ServiceNumber1() {
           }}
         >
           <img
-            className="image-fade-in"
+            className="image-fade-in imageClass"
             src={s1Img3}
             alt="our services"
             width={"90%"}
             height={"361.25px"}
           />
           <img
-            className="image-fade-in"
+            className="image-fade-in imageClass"
             src={s1Img4}
             alt="our services"
             width={"90%"}

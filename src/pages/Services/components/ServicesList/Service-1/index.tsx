@@ -53,14 +53,14 @@ export default function ServiceNum1() {
         // }}
       >
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s1Img5}
           alt="our services"
           width={"90%"}
           height={"359px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s1Img6}
           alt="our services"
           width={"90%"}
@@ -70,14 +70,14 @@ export default function ServiceNum1() {
           }}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s1Img1}
           alt="our services"
           width={"90%"}
           height={"361px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s1Img2}
           alt="our services"
           width={"90%"}
@@ -87,28 +87,28 @@ export default function ServiceNum1() {
           }}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s1Img3}
           alt="our services"
           width={"90%"}
           height={"359px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s1Img4}
           alt="our services"
           width={"90%"}
           height={"447px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s1Img7}
           alt="our services"
           width={"90%"}
           height={"447px"}
         />
         <img
-          className="image-fade-in"
+          className="image-fade-in imageClass"
           src={s1Img8}
           alt="our services"
           width={"90%"}
