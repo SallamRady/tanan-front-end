@@ -6,14 +6,13 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import BgImg from "../../../../assets/images/contactSectionBG.jpeg";
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import DraftsOutlinedIcon from "@mui/icons-material/DraftsOutlined";
 import { useTranslation } from "react-i18next";
 import { useContext, useEffect, useRef, useState } from "react";
 import { ConstantsContext } from "../../../../context/ConstantsContext";
-import "../../../../App.css";
 import redirectToWhatsApp from "../../../../methods/social/RedirectToWhatsApp";
+import "../../../../App.css";
 
 export default function ContactUsSection() {
   // TODO::declare and define our state and variables
@@ -54,7 +53,6 @@ export default function ContactUsSection() {
       style={{
         margin: 0,
         padding: 0,
-        // backgroundImage: `url(${BgImg})`,
         backgroundSize: "100% 100%",
         height: "43rem",
         display: "flex",

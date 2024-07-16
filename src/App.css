@@ -17,3 +17,8 @@
 body {
   overflow-x: hidden;
 }
+
+/* color active dot in mobile sidebar */
+.awssld__bullets--active {
+  background-color: #8f65eb !important;
+}
