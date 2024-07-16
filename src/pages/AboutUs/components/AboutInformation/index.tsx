@@ -1,12 +1,21 @@
 import { Stack, Typography } from "@mui/material";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ConstantsContext } from "../../../../context/ConstantsContext";
 import { useTranslation } from "react-i18next";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function AboutInformation() {
   // todo::declare and define component state and variable
   const constsContext = useContext(ConstantsContext);
   let { t } = useTranslation();
+
+  useEffect(() => {
+    AOS.init({
+      // You can customize the options here
+      duration: 1000,
+    });
+  }, []);
 
   // return component ui
   return (
@@ -21,7 +30,10 @@ export default function AboutInformation() {
         },
       }}
     >
-      <Stack sx={{ width: { xs: "100%", md: "400px" }, flexGrow: 1 }}>
+      <Stack
+        sx={{ width: { xs: "100%", md: "400px" }, flexGrow: 1 }}
+        data-aos="fade-up"
+      >
         <Typography
           variant="subtitle1"
           fontFamily={constsContext.boldFont}
@@ -49,7 +61,10 @@ export default function AboutInformation() {
         </Typography>
       </Stack>
 
-      <Stack sx={{ width: { xs: "100%", md: "400px" }, flexGrow: 1 }}>
+      <Stack
+        sx={{ width: { xs: "100%", md: "400px" }, flexGrow: 1 }}
+        data-aos="fade-up"
+      >
         <Typography
           variant="subtitle1"
           fontFamily={constsContext.boldFont}
@@ -77,7 +92,10 @@ export default function AboutInformation() {
         </Typography>
       </Stack>
 
-      <Stack sx={{ width: { xs: "100%", md: "400px" }, flexGrow: 1 }}>
+      <Stack
+        sx={{ width: { xs: "100%", md: "400px" }, flexGrow: 1 }}
+        data-aos="fade-up"
+      >
         <Typography
           variant="subtitle1"
           fontFamily={constsContext.boldFont}
@@ -105,7 +123,10 @@ export default function AboutInformation() {
         </Typography>
       </Stack>
 
-      <Stack sx={{ width: { xs: "100%", md: "400px" }, flexGrow: 1 }}>
+      <Stack
+        sx={{ width: { xs: "100%", md: "400px" }, flexGrow: 1 }}
+        data-aos="fade-up"
+      >
         <Typography
           variant="subtitle1"
           fontFamily={constsContext.boldFont}

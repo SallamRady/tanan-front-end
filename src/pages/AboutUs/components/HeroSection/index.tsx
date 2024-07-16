@@ -14,7 +14,7 @@ export default function AboutPageHeroSection() {
   return (
     <Box
       width={"100%"}
-      height={"94vh"}
+      height={"100vh"}
       position={"relative"}
       sx={{
         backgroundImage: `url(${bgImg})`,
