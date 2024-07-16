@@ -1,5 +1,4 @@
 import {
-  Box,
   List,
   ListItem,
   ListItemIcon,
@@ -55,14 +54,16 @@ export default function ContactUsSection() {
       style={{
         margin: 0,
         padding: 0,
-        backgroundImage: `url(${BgImg})`,
+        // backgroundImage: `url(${BgImg})`,
+        backgroundSize: "100% 100%",
+        height: "43rem",
         display: "flex",
         alignItems: "center",
         color: "#fff",
         transition: "all 1s ease-in-out",
         opacity: hide ? 0.1 : 1,
       }}
-      className="HomeCOntactSection"
+      className="HomeContactSection"
     >
       <Stack
         spacing={2}
