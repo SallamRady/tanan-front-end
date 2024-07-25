@@ -1,9 +1,11 @@
 import {
+  IconButton,
   List,
   ListItem,
   ListItemIcon,
   ListItemText,
   Stack,
+  Tooltip,
   Typography,
 } from "@mui/material";
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
@@ -12,6 +14,10 @@ import { useTranslation } from "react-i18next";
 import { useContext, useEffect, useRef, useState } from "react";
 import { ConstantsContext } from "../../../../context/ConstantsContext";
 import redirectToWhatsApp from "../../../../methods/social/RedirectToWhatsApp";
+import XIcon from "@mui/icons-material/X";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import { Link, useNavigate } from "react-router-dom";
+import tiktokIcon from "../../../../assets/images/tiktok.png";
 import "../../../../App.css";
 
 export default function ContactUsSection() {
@@ -20,6 +26,7 @@ export default function ContactUsSection() {
   const constContext = useContext(ConstantsContext);
   const [hide, setHide] = useState(true);
   const elementRef = useRef<HTMLDivElement | null>(null);
+  const navigator = useNavigate();
 
   // control show element when scroll
   useEffect(() => {
@@ -98,7 +105,7 @@ export default function ContactUsSection() {
               <AddIcCallIcon sx={{ color: "#fff" }} />
             </ListItemIcon>
             <ListItemText
-              primary="+966 50 588 2911"
+              primary="+966 50 781 0823"
               onClick={() => redirectToWhatsApp()}
               sx={{ cursor: "pointer" }}
               primaryTypographyProps={{
@@ -113,7 +120,7 @@ export default function ContactUsSection() {
             </ListItemIcon>
             <Typography
               component={"a"}
-              href="mailto:yahala@tannan.com"
+              href="mailto:customersuccess@tanan.sa"
               variant="body2"
               fontFamily={constContext.mediumFont}
               sx={{
@@ -121,8 +128,66 @@ export default function ContactUsSection() {
                 textDecoration: "none",
               }}
             >
-              yahala@tannan.com
+              customersuccess@tanan.sa
             </Typography>
+          </ListItem>
+          <ListItem>
+            <Stack direction={"row"} spacing={2} alignItems={'center'}>
+              {/* Tiktok */}
+              <Tooltip title="tiktok">
+                <a
+                  href="https://www.tiktok.com/@tanan_sa?_t=8oJyOUXxSTQ&_r=1"
+                  target="_blank"
+                >
+                  <img
+                    src={tiktokIcon}
+                    alt="tiktok"
+                    width={"45px"}
+                    height={"45px"}
+                    style={{
+                      cursor: "pointer",
+                      marginTop:1
+                    }}
+                  />
+                </a>
+              </Tooltip>
+              {/* twitter X */}
+              <Tooltip title="X">
+                <a
+                  target="_blank"
+                  href={"https://x.com/tannan_sa"}
+                  style={{
+                    color: "#fff",
+                    backgroundColor: "#000",
+                    borderRadius: "50%",
+                    padding: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <XIcon />
+                </a>
+              </Tooltip>
+              {/* instgram */}
+              <Tooltip title="Instagram">
+                <a
+                  target="_blank"
+                  href={"https://x.com/tannan_sa"}
+                  style={{
+                    color: "#fff",
+                    backgroundColor: "#000",
+                    borderRadius: "50%",
+                    padding: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <InstagramIcon />
+                </a>
+              </Tooltip>
+            </Stack>
           </ListItem>
         </List>
       </Stack>

@@ -1,5 +1,5 @@
 const redirectToWhatsApp = () => {
-  const whatsappURL = `https://wa.me/+966505882911`;
+  const whatsappURL = `https://wa.me/+966507810823`;
   window.open(whatsappURL, "_blank");
 };
 
